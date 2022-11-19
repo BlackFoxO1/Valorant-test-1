@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+    font-family: 'Rajdhani', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+.btn {
+    padding: 12px 28px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+u {
+    text-decoration: none;
+}
+a:hover {
+    color: orange;
+}
+.head {
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    position: fixed;
+    z-index: 10;
+    margin-bottom: 200px;
+}
+.head-logo {
+    width: 50px;
+}
+.head-inner {
+    margin: 0 auto;
+    width: 75%;
+}
+.head-w {
+    padding: 10px;
+}
+.navig {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav > a {
+    margin-left: 35px;
+    opacity: 0.6;
+}
+.first-a:first-child {
+    margin-left: 0;
+    opacity: 1;
+    background-color: rgb(49, 49, 49);
+    padding: 25px;
+}
+.last-c:last-child {
+    opacity: 1;
+}
+.bunner {
+    height: 90vh;
+    background-size: cover;
+}
+.bunner-inner {
+    margin: 0 auto;
+    padding: 70px 0;
+}
+.clip {
+    height: 90%;
+    width: 100%;
+    position: absolute;
+}
+.raze-bunner {
+    background: url(../img/raze-bunner.jpg) no-repeat center;
+    background-size: cover;
+}
+.chamber-bunner {
+    background: url(../img/chamber-buuner.jfif) no-repeat center;
+    background-size: cover;
+    transition: 0.6s;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+.chamber-bunner:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.raze-bunner:hover ~ .chamber-bunner {
+    clip-path: polygon(0 0, 0 0, 100% 0);
+}
+.bun-text {
+    display: none;
+    width: 40%;
+    font-size: 24px;
+}
+.chamber-bunner:hover .bun-text {
+    display: block;
+}
+.raze-bunner:hover .bun-text {
+    display: block;
+}
+.cont {
+    margin: 0 auto;
+    width: 80%;
+}
+.raze-u {
+    font-size: 64px;
+    color: yellow;
+}
+.chamber-u {
+    font-size: 54px;
+    color: orange;
+}
+.agents {
+    margin-bottom: 120px;
+    margin-top: 60px;
+}
+.agents .cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.ag-inner-1 {
+    width: 50%;
+}
+.ag-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 42px;
+}
+.ag-inner-1 hr {
+    width: 30%;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.cards-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 18px;
+}
+.card {
+    width: 20%;
+    text-align: center;
+    border: 1px solid #ededed;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(10, 10, 10);
+    transition: 0.4s;
+}
+.card:hover {
+    box-shadow: 10px 10px 15px 5px #999;
+    transform: scale(1.1);
+}
+.card-inner {
+    align-items: center;
+}
+.card-img {
+    width: 35px;
+}
+.card-title {
+    font-size: 20px;
+    line-height: 2;
+}
+.detals-card p {
+    font-size: 16px;
+}
+.ag-inner-2 {
+    width: 48%;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../img/Raze_v2.png);
+    background-size: cover;
+    height: 60vh;
+}
+.more-detals {
+    text-align: center;
+    transform: translateY(140%);
+}
+.more-detals hr {
+    width: 10%;
+    margin-bottom: 50px;
+}
+.more-title {
+    font-size: 36px;
+    line-height: 42px;
+}
+.more-but {
+    background-color: transparent;
+}
+.chamber-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.chamber-row {
+    margin-left: 0;
+    margin-right: 17px;
+}
+.chamber-inner-2 {
+    width: 48%;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../img/chamber-more.webp);
+    background-size: cover;
+    height: 60vh;
+}
+.more-but {
+    transition: 0.5s;
+}
+.more-but:hover {
+    background-color: white;
+    color: black;
+}
+.skins-card-img {
+    width: 100%;
+}
+.skins {
+    margin-bottom: 170px;
+}
+.skins .cont {
+    width: 75%;
+}
+.skins-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 42.20px;
+}
+.skins-inner hr {
+    width: 120px;
+    margin-bottom: 70px;
+}
+.skins-card-row {
+    margin-bottom: 90px;
+}
+.last-row {
+    margin-bottom: 0;
+}
+.skins-card {
+    width: 30%;
+}
+.arsenal {
+    background-color: rgb(29, 29, 29);
+    padding: 25px;
+}
+.weapon {
+    width: 80%;
+}
+.weapon-name {
+    font-size: 20px;
+    font-weight: 400;
+}
+.row-class {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.column-class {
+    width: 40%;
+    text-align: center;
+}
+.column-class h1 {
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+.ars-title {
+    font-size: 36px;
+    text-align: center;
+    line-height: 42px;
+}
+.asr-inner hr {
+    width: 10%;
+    margin-bottom: 60px;
+}
+.but-asrenal {
+    background-color: transparent;
+    transition: 0.5s;
+}
+.but-asrenal:hover {
+    background-color: #ededed;
+    color: black;
+}
+.but-ars-div {
+    text-align: center;
+}
+.weapon-card {
+    margin-bottom: 50px;
+}
+.hiden {
+    display: none;
+}
+.rang {
+    margin-bottom: 140px;
+}
+.rang-inner {
+    text-align: center;
+}
+.rang-title {
+    text-align: center;
+    line-height: 42.20px;
+    font-size: 36px;
+}
+.rang-inner hr {
+    width: 20%;
+    margin-bottom: 50px;
+}
+.det-rang {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.but-rang-more {
+    background-color: transparent;
+    transition: 0.4s;
+}
+.rang-i-r-inner {
+    margin-bottom: 50px;
+}
+.but-rang-more:hover {
+    background-color: #eee;
+    color: black;
+}
+.mod-canvs {
+    position: fixed;
+    top: 75px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+}
+.modal {
+    padding: 25px;
+    box-shadow: 0 0 20px 0 #999;
+}
+.m-close {
+    cursor: pointer;
+    text-align: right;
+    color: white;
+}
+.rang-cont {
+    margin-top: 20px;
+}
+.rang-column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.rang-column .rang-row {
+    margin-bottom: 30px;
+}
+.rang-row {
+    display: flex;
+    flex-direction: row;
+}
+.rang-logo {
+    width: 140px;
+}
+.rang-detal h2 {
+    font-size: 24px;
+}
+.modal-title {
+    text-align: center;
+    font-size: 28px;
+    color: red;
+}
+.foot {
+    background: url(../img/val-footV2.png);
+    background-size: cover;
+    padding: 75px 0;
+}
+.foot-row {
+    display: flex;
+    justify-content: space-between;
+}
+.foot-column {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.foot-a {
+    display: block;
+    line-height: 44px;
+}
+.foot-a button {
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+    border: none;
+}
+.foot-a button:hover {
+    color: #999;
+}
+.foot-column h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.42px;
+}
+.foot-column p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.VALOR {
+    color: red;
+    font-weight: 400;
+    font-size: 20px;
+}
+.foot-inp {
+    padding: 12px 28px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+.foot-inp::placeholder {
+    font-size: 14px;
+}
+.div-menu-bar {
+    display: none;
+}
+.menu-med {
+    background-color: black;
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+}
+@media (max-width: 1080px) {
+    nav {
+        display: none;
+    }
+    .div-menu-bar {
+        display: block;
+    }
+    .med-head {
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .bun-text {
+        text-align: center;
+        font-size: 18px;
+    }
+    .agents .cont {
+        display: flex;
+        flex-direction: column;
+    }
+    .ag-inner-1 {
+        width: 100%;
+    }
+    .ag-inner-2 {
+        width: 100%;
+    }
+    .cards-row {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .chamber-inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .chamber-inner-1 {
+        width: 100%;
+    }
+    .chamber-inner-2 {
+        width: 100%;
+    }
+    .card {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .more-title {
+        font-weight: 400;
+        font-size: 24px;
+    }
+    .card-title {
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .skins-card {
+        width: 70%;
+    }
+    .row-class {
+        display: flex;
+        flex-direction: column;
+    }
+    .med-weap {
+        display: flex;
+        flex-direction: row;
+    }
+    .column-class {
+        text-align: left;
+        width: 100%;
+    }
+    .weapon-card {
+        transition: 0.3s;
+    }
+    .weapon-card img {
+        width: 100%;
+    }
+    .weapon-card:hover {
+        transform: scale(1.3);
+    }
+    .foot {
+        background: url(../img/val-foot.png);
+        background-size: cover;
+    }
+    .media-foot {
+        display: none;
+    }
+    .foot-row {
+        display: flex;
+        flex-direction: column;
+    }
+    .foot-column {
+        text-align: center;
+        width: 100%;
+        line-height: 25px;
+    }
+    .foot-column h1 {
+        font-size: 34px;
+    }
+    .foot-column p {
+        font-size: 18px;
+    }
+    .rang-logo {
+        width: 100px;
+    }
+    .rang-detal h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
